@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import Heading from './heading';
-import List from './list';
+import Heading from '../heading';
+import List from '../list';
 
 import styles from './_index.css';
 
