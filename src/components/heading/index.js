@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from "prop-types";
 import cn from "classnames";
 
@@ -8,18 +8,18 @@ const Heading = ({ className }) => {
   const outputClassName = cn('heading', `${className}`);
 
   return (
-    <h1 className={className}>How Are You Feeling?</h1>
+    <h1 className={outputClassName}>How Are You Feeling?</h1>
   );
 }
 
 Heading.displayName = "Heading";
 
 Heading.propTypes = {
-  position: PropTypes.string
+  className: PropTypes.string
 };
 
 Heading.defaultProps = {
-  position: ""
+  className: ""
 };
 
 export default Heading;
