@@ -31,38 +31,32 @@
   border-bottom-right-radius: 10px;
 }
 
-.excited:hover,
-.excited {
+.excited:hover {
 	background-color: #ec7b28;
 	border: 5px solid #b86120;
 	color: #fff;
 }
-.tender:hover,
-.tender {
+.tender:hover {
 	background-color: #f014e8;
 	border: 5px solid #af1eaa;
 	color: #fff;
 }
-.scared:hover,
-.scared {
+.scared:hover {
 	background-color: #e5df43;
 	border: 5px solid #beb93c;
 	color: #fff;
 }
-.angry:hover,
-.angry {
+.angry:hover {
 	background-color: #e80d0d;
 	border: 5px solid #b60b0b;
 	color: #fff;
 }
-.sad:hover,
-.sad {
+.sad:hover {
 	background-color: #5185cc;
 	border: 5px solid #3f679e;
 	color: #fff;
 }
-.happy:hover,
-.happy {
+.happy:hover {
 	background-color: #3ea34a;
 	border: 5px solid #2a6d32;
 	color: #fff;
