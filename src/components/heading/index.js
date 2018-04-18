@@ -6,10 +6,10 @@ import './_index.css';
 
 const Heading = ({ level, className, children }) => {  
   const outputClassName = cn('heading', `${className}`);
-  const headingLevel = `h${level}`;
+  const HeadingLevel = `h${level}`;
 
   return (
-    <headingLevel className={outputClassName}>{children}</headingLevel>
+    <HeadingLevel className={outputClassName}>{children}</HeadingLevel>
   );
 }
 
