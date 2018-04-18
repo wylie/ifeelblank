@@ -21,49 +21,50 @@
   background-color: #eee;
   border: 5px solid #ccc;
   box-shadow: -1px 1px 1px #076f85;
-  &:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-  }
-  &:last-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
-}
 
-.excited:hover,
-.excited {
-	background-color: #ec7b28;
-	border: 5px solid #b86120;
-	color: #fff;
+  & .excited:hover,
+  & .excited {
+    background-color: #ec7b28;
+    border: 5px solid #b86120;
+    color: #fff;
+  }
+  & .tender:hover,
+  & .tender {
+    background-color: #f014e8;
+    border: 5px solid #af1eaa;
+    color: #fff;
+  }
+  & .scared:hover,
+  & .scared {
+    background-color: #e5df43;
+    border: 5px solid #beb93c;
+    color: #fff;
+  }
+  & .angry:hover,
+  & .angry {
+    background-color: #e80d0d;
+    border: 5px solid #b60b0b;
+    color: #fff;
+  }
+  & .sad:hover,
+  & .sad {
+    background-color: #5185cc;
+    border: 5px solid #3f679e;
+    color: #fff;
+  }
+  & .happy:hover,
+  & .happy {
+    background-color: #3ea34a;
+    border: 5px solid #2a6d32;
+    color: #fff;
+  }
+
 }
-.tender:hover,
-.tender {
-	background-color: #f014e8;
-	border: 5px solid #af1eaa;
-	color: #fff;
+.List_item:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.scared:hover,
-.scared {
-	background-color: #e5df43;
-	border: 5px solid #beb93c;
-	color: #fff;
-}
-.angry:hover,
-.angry {
-	background-color: #e80d0d;
-	border: 5px solid #b60b0b;
-	color: #fff;
-}
-.sad:hover,
-.sad {
-	background-color: #5185cc;
-	border: 5px solid #3f679e;
-	color: #fff;
-}
-.happy:hover,
-.happy {
-	background-color: #3ea34a;
-	border: 5px solid #2a6d32;
-	color: #fff;
+.List_item:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
