@@ -9,9 +9,10 @@ class Wrap extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="Wrap">
+      <div className={styles.Wrap}>
         <Heading />
         <List />
+        {children}
       </div>
     );
   }
