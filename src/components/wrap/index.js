@@ -9,7 +9,7 @@ class Wrap extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className={Wrap}>
+      <div className="Wrap">
         <Heading />
         <List />
         {children}
