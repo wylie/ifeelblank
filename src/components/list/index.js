@@ -6,12 +6,12 @@ class List extends Component {
   render() {
     return (
       <ul className="List">
-        <li className="excited">excited</li>
-        <li className="tender">tender</li>
-        <li className="scared">scared</li>
-        <li className="angry">angry</li>
-        <li className="sad">sad</li>
-        <li className="happy">happy</li>
+        <li className="List_item excited">excited</li>
+        <li className="List_item tender">tender</li>
+        <li className="List_item scared">scared</li>
+        <li className="List_item angry">angry</li>
+        <li className="List_item sad">sad</li>
+        <li className="List_item happy">happy</li>
       </ul>
     );
   }
