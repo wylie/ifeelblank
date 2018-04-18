@@ -5,7 +5,7 @@ import cn from "classnames";
 import './_index.css';
 
 const Heading = ({ level, className, children }) => {  
-  const outputClassName = cn('heading', `${className}`);
+  const outputClassName = cn(`${className}`);
   const HeadingLevel = `h${level}`;
 
   return (
