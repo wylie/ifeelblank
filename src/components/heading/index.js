@@ -4,22 +4,24 @@ import cn from "classnames";
 
 import './_index.css';
 
-const Heading = ({ className }) => {  
+const Heading = ({ className, children }) => {  
   const outputClassName = cn('heading', `${className}`);
 
   return (
-    <h1 className={outputClassName}>How Are You Feeling?</h1>
+    <h1 className={outputClassName}>{children}</h1>
   );
 }
 
 Heading.displayName = "Heading";
 
 Heading.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  children: PropTypes.string
 };
 
 Heading.defaultProps = {
-  className: ""
+  className: "",
+  children: ""
 };
 
 export default Heading;

@@ -10,9 +10,9 @@ class Wrap extends Component {
     const { children } = this.props;
     return (
       <div className="Wrap">
-        <Heading className="heading" />
+        <Heading className="heading" children="How Are You Feeling?" />
         <List />
-        <Heading className="subheading" />
+        <Heading className="subheading" children="I Feel ________." />
         {children}
       </div>
     );
