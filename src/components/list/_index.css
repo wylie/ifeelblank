@@ -1,12 +1,12 @@
 .List {
-	width: 100%;
-	margin: 10px 0;
+  width: 100%;
+  margin: 10px 0;
 
-	-webkit-user-select: none;
-	   -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 
-	-khtml-user-select: none;
-	    -o-user-select: none;
+  -khtml-user-select: none;
+  -o-user-select: none;
 }
 .List_item {
   float: left;
@@ -32,32 +32,32 @@
 }
 
 .excited:hover {
-	background-color: #ec7b28;
-	border: 5px solid #b86120;
-	color: #fff;
+  background-color: #ec7b28;
+  border: 5px solid #b86120;
+  color: #fff;
 }
 .tender:hover {
-	background-color: #f014e8;
-	border: 5px solid #af1eaa;
-	color: #fff;
+  background-color: #f014e8;
+  border: 5px solid #af1eaa;
+  color: #fff;
 }
 .scared:hover {
-	background-color: #e5df43;
-	border: 5px solid #beb93c;
-	color: #fff;
+  background-color: #e5df43;
+  border: 5px solid #beb93c;
+  color: #fff;
 }
 .angry:hover {
-	background-color: #e80d0d;
-	border: 5px solid #b60b0b;
-	color: #fff;
+  background-color: #e80d0d;
+  border: 5px solid #b60b0b;
+  color: #fff;
 }
 .sad:hover {
-	background-color: #5185cc;
-	border: 5px solid #3f679e;
-	color: #fff;
+  background-color: #5185cc;
+  border: 5px solid #3f679e;
+  color: #fff;
 }
 .happy:hover {
-	background-color: #3ea34a;
-	border: 5px solid #2a6d32;
-	color: #fff;
+  background-color: #3ea34a;
+  border: 5px solid #2a6d32;
+  color: #fff;
 }

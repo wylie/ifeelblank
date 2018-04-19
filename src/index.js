@@ -1,9 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import registerServiceWorker from './registerServiceWorker';
+import React from "react";
+import { render } from "react-dom";
+import Wrap from "./components/wrap";
 
-import './_index.css';
-import Wrap from './components/wrap';
+import "./styles/_reset.css";
+import "./_index.css";
 
-ReactDOM.render(<Wrap />, document.getElementById('root'));
-registerServiceWorker();
+const App = () => (
+  <div className="App">
+    <Wrap />
+  </div>
+);
+
+render(<App />, document.getElementById("root"));

@@ -1,17 +1,15 @@
-import React from 'react';
+import React from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 
-import './_index.css';
+import "./_index.css";
 
-const Heading = ({ level, className, children }) => {  
+const Heading = ({ level, className, children }) => {
   const outputClassName = cn(`${className}`);
   const HeadingLevel = `h${level}`;
 
-  return (
-    <HeadingLevel className={outputClassName}>{children}</HeadingLevel>
-  );
-}
+  return <HeadingLevel className={outputClassName}>{children}</HeadingLevel>;
+};
 
 Heading.displayName = "Heading";
 
