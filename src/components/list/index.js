@@ -14,6 +14,4 @@ const List = () => {
   );
 };
 
-List.displayName = "Bananas";
-
 export default List;
