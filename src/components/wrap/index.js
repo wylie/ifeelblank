@@ -20,4 +20,6 @@ const Wrap = () => {
   );
 };
 
+Wrap.displayName = "Wrap";
+
 export default Wrap;
