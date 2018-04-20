@@ -2,8 +2,12 @@
   width: 90%;
   padding: 2rem;
   margin: auto;
-  @media (min-width: 600px) {
+  background: white;
+}
+@media (min-width: 600px) {
+  .Wrap {
     width: 75%;
+    background: red;
   }
 }
 
