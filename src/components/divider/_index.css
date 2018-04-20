@@ -1,12 +1,18 @@
 .Divider {
-    border-top: 3px solid #fff;
-    line-height: 0;
-    margin: 2rem 0;
+  margin: 0 0 3rem;
+  line-height: 0;
+  border-top: 3px solid #fff;
+  text-align: center;
+}
+.Divider:not(:first-child) {
+  margin: 3rem 0;
 }
 
-.Divider:before {
-    content: "Previous Feels";
-    padding: 0 .5rem;
-    background: #64abba;
-    font-size: 2rem;
+.Divider_text {
+  padding: 0 0.5rem;
+  background: #64abba;
+  font-size: 2.5rem;
+}
+.Divider:not(:first-child) .Divider_text {
+  font-size: 2rem;
 }
