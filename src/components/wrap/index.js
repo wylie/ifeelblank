@@ -2,6 +2,7 @@ import React from "react";
 
 import Heading from "../heading";
 import List from "../list";
+import Divider from "../divider";
 
 import "./_index.css";
 
@@ -17,6 +18,7 @@ const Wrap = () => {
       <Heading level="2" className="subheading">
         {headings.sub} <span />.
       </Heading>
+      <Divider />
       <List theme="secondary" data={felt} />
     </div>
   );
