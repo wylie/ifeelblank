@@ -1,5 +1,9 @@
 .Wrap {
-  width: 75%;
+  width: 90%;
   padding: 2rem;
   margin: auto;
+  @media (min-width: 600px) {
+    width: 75%;
+  }
 }
+
