@@ -1,3 +1,22 @@
-const feels = ["excited", "tender", "scared", "angry", "sad", "happy"];
+const feels = [
+  {
+    type: "excited"
+  },
+  {
+    type: "tender"
+  },
+  {
+    type: "scared"
+  },
+  {
+    type: "angry"
+  },
+  {
+    type: "sad"
+  },
+  {
+    type: "happy"
+  }
+];
 
 export { feels };

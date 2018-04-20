@@ -1,63 +1,21 @@
 .List {
-  width: 100%;
-  margin: 10px 0;
-
-  -webkit-user-select: none;
-  -moz-user-select: none;
-
-  -khtml-user-select: none;
-  -o-user-select: none;
+  display: flex;
+  user-select: none;
 }
-.List_item {
-  float: left;
-  box-sizing: border-box;
-  width: calc(100% / 6);
-  height: 100px;
-  cursor: pointer;
-  line-height: 3.5rem;
-  color: #666;
-  text-indent: -99999px;
-
-  background-color: #eee;
-  border: 5px solid #ccc;
-  box-shadow: -1px 1px 1px #076f85;
+.List__primary {
+  flex-direction: row;
+  min-height: 75px;
 }
-.List_item:first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.List__primary .List_item {
+  flex: 2 2 0px;
+  margin: 0.125rem;
 }
-.List_item:last-child {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+.List__secondary {
+  flex-wrap: wrap;
 }
-
-.excited:hover {
-  background-color: #ec7b28;
-  border: 5px solid #b86120;
-  color: #fff;
-}
-.tender:hover {
-  background-color: #f014e8;
-  border: 5px solid #af1eaa;
-  color: #fff;
-}
-.scared:hover {
-  background-color: #e5df43;
-  border: 5px solid #beb93c;
-  color: #fff;
-}
-.angry:hover {
-  background-color: #e80d0d;
-  border: 5px solid #b60b0b;
-  color: #fff;
-}
-.sad:hover {
-  background-color: #5185cc;
-  border: 5px solid #3f679e;
-  color: #fff;
-}
-.happy:hover {
-  background-color: #3ea34a;
-  border: 5px solid #2a6d32;
-  color: #fff;
+.List__secondary .List_item {
+  flex: 1 1 0px;
+  min-width: 50px;
+  min-height: 50px;
+  margin: 0.125rem;
 }

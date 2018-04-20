@@ -1,0 +1,26 @@
+import React from "react";
+import PropTypes from "prop-types";
+import cn from "classnames";
+
+import "./_index.css";
+
+const Feeling = ({ theme, type }) => {
+  const outputClassName = cn(Feeling, [
+    `Feeling Feeling__${theme} Felt__${type}`
+  ]);
+  return <div className={outputClassName} />;
+};
+
+Feeling.displayName = "List.Feeling";
+
+Feeling.propTypes = {
+  theme: PropTypes.oneOf(["primary", "secondary"]).isRequired,
+  type: PropTypes.string
+};
+
+Feeling.defaultProps = {
+  theme: "",
+  type: ""
+};
+
+export default Feeling;
