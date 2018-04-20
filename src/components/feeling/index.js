@@ -6,12 +6,12 @@ import "./_index.css";
 
 const Feeling = ({ theme, type }) => {
   const outputClassName = cn(Feeling, [
-    `Feeling Feeling__${theme} Felt__${type}`
+    `Feeling Feeling__${theme} Feeling__${type}`
   ]);
-  return <div className={outputClassName} />;
+  return <div className={outputClassName}>{type}</div>;
 };
 
-Feeling.displayName = "List.Feeling";
+Feeling.displayName = "Feeling";
 
 Feeling.propTypes = {
   theme: PropTypes.oneOf(["primary", "secondary"]).isRequired,

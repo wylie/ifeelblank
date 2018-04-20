@@ -4,11 +4,12 @@
 }
 .List__primary {
   flex-direction: row;
-  min-height: 75px;
+  flex-wrap: wrap;
 }
 .List__primary .List_item {
-  flex: 2 2 0px;
-  margin: 0.125rem;
+  flex: 4 4 33%;
+  padding: 0.125rem;
+  height: 50px;
 }
 .List__secondary {
   flex-wrap: wrap;
