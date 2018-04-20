@@ -8,7 +8,6 @@ import "./_index.css";
 
 const List = ({ className, data, theme }) => {
   const outputClassName = cn(`List List__${theme}`);
-  console.log(outputClassName);
   return (
     <ul className={outputClassName}>
       {data.map((item, index) => (
