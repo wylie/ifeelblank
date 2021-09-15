@@ -1,11 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+
+    font-family: "Grand Hotel", Arial, Helvetica, cursive;
+    font-size: 1em;
+    color: #fff;
+
+    background: #64abba;
+  }
+`
 
 ReactDOM.render(
   <React.StrictMode>
+    <GlobalStyle />
     <App />
   </React.StrictMode>,
   document.getElementById('root')
