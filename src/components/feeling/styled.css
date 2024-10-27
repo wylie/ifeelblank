@@ -1,0 +1,51 @@
+.feeling {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(0,0,0,.25);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem
+}
+
+.feeling.primary {
+  width: 100%;
+  height: 100%;
+  border: 5px solid rgba(0,0,0,.25);
+  text-align: center;
+  font-size: 1.5rem;
+  padding: .5rem
+}
+
+.feeling.secondary {
+  max-width: 40px;
+}
+
+.feeling.excited {
+  background-color: var(--feeling-excited);
+  color: var(--text);
+}
+
+.feeling.tender {
+  background-color: var(--feeling-tender);
+  color: var(--text);
+}
+
+.feeling.scared {
+  background-color: var(--feeling-scared);
+  color: var(--text);
+}
+
+.feeling.angry {
+  background-color: var(--feeling-angry);
+  color: var(--text);
+}
+
+.feeling.sad {
+  background-color: var(--feeling-sad);
+  color: var(--text);
+}
+
+.feeling.happy {
+  background-color: var(--feeling-happy);
+  color: var(--text);
+}

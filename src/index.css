@@ -1,11 +1,24 @@
-html, body {
-  width: 100%;
-  margin: 0;
-  background: #fff;
-  font-family: helvetica, arial, sans-serif;
+:root {
+  --text: #fff;
+  --background: #64abba;
+  --feeling-excited: #ec7b28;
+  --feeling-tender: #f014e8;
+  --feeling-scared: #e5df43;
+  --feeling-angry: #e80d0d;
+  --feeling-sad: #5185cc;
+  --feeling-happy: #3ea34a;
 }
 
-#root {
-  display: flex;
-  justify-content: center;
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Grand Hotel", Arial, Helvetica, cursive;
+  font-size: 1em;
+  color: var(--text);
+  background: var(--background);
 }

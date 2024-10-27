@@ -1,0 +1,6 @@
+.feelings_past {
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 1rem;
+  justify-content: center;
+}
