@@ -1,6 +1,6 @@
 .feelings_past {
   display: flex;
   flex-wrap: wrap;
-  grid-gap: 1rem;
+  grid-gap: .5rem;
   justify-content: center;
 }

@@ -2,11 +2,17 @@
   --text: #fff;
   --background: #64abba;
   --feeling-excited: #ec7b28;
+  --feeling-excited-hover: #d46f24;
   --feeling-tender: #f014e8;
+  --feeling-tender-hover: #d812d1;
   --feeling-scared: #e5df43;
+  --feeling-scared-hover: #cec93c;
   --feeling-angry: #e80d0d;
+  --feeling-angry-hover: #ba0a0a;
   --feeling-sad: #5185cc;
+  --feeling-sad-hover: #4978b8;
   --feeling-happy: #3ea34a;
+  --feeling-happy-hover: #389343;
 }
 
 * {

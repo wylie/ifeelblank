@@ -1,11 +1,13 @@
 import React from "react";
 import "./styled.css";
 
-const Feeling = ({ theme, type, children }) => {
+const Feeling = ({ element = "div", theme, kind, children, ...feelingprops }) => {
+  const Element = element;
   return (
-    <div
-      className={`feeling ${type} ${theme}`}
+    <Element
+      className={`feeling ${kind} ${theme}`}
       children={children}
+      {...feelingprops}
     />
   );
 };

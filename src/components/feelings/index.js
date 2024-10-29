@@ -7,7 +7,7 @@ const Feelings = () => {
   return (
     <div className="feels">
       {feels.map((index) => (
-        <Feeling theme={"primary"} type={index} key={index} children={index} />
+        <Feeling element="button" type="button" theme={"primary"} kind={index} key={index} children={index} />
       ))}
     </div>
   )
