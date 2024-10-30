@@ -1,47 +1,55 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Feeling from "../feeling";
+import { FeelingsContext } from "../feelings/FeelingsContext";
 import "./styled.css";
 
+const parseDateString = (dateString) => {
+  if (dateString.includes('T')) {
+    // Handle ISO date strings directly
+    return new Date(dateString);
+  }
+  const [datePart, timePart] = dateString.split(' ');
+  if (!datePart || !timePart) {
+    return new Date(dateString); // Fallback to creating date directly
+  }
+  const [day, month, year] = datePart.split('/');
+  if (!day || !month || !year) {
+    return new Date(dateString); // Fallback to creating date directly
+  }
+  const paddedMonth = month.padStart(2, '0');
+  const paddedDay = day.padStart(2, '0');
+  const date = new Date(`${year}-${paddedMonth}-${paddedDay}T${timePart}`);
+  return date;
+};
+
+const formatDate = (date) => {
+  const options = { 
+    year: 'numeric', 
+    month: 'long', 
+    day: 'numeric', 
+    hour: 'numeric', 
+    minute: 'numeric', 
+    hour12: true 
+  };
+  return date.toLocaleString('en-US', options);
+};
+
 const FeelingsPast = () => {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const { feelings } = useContext(FeelingsContext);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch("https://api.jsonbin.io/v3/b/671cdf95e41b4d34e4491863", {
-          headers: {
-            "X-Master-Key": process.env.REACT_APP_API_KEY
-          }
-        });
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        const result = await response.json();
-        setData(result.record.feelings || []);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return <div className="message">Loading...</div>;
-  }
-
-  if (error) {
-    return <div className="message error">Error: {error.message}</div>;
-  }
   return (
     <div className="feelings_past" data-element="list">
-      {data.map((index) => (
-        <Feeling theme={"secondary"} kind={index.name} key={index.id} />
-      ))}
+      {feelings.map((feeling) => {
+        const parsedDate = parseDateString(feeling.date);
+        return (
+          <div className="feeling-container" key={feeling.id}>
+            <Feeling theme={"secondary"} kind={feeling.name} />
+            <div className="tooltip">
+              {feeling.date ? `${formatDate(parsedDate)}, Feeling: ${feeling.name}` : feeling.name}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
