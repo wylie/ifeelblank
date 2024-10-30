@@ -8,6 +8,7 @@ const FeelingsPast = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    console.log("My Special API Key:", process.env.REACT_APP_API_KEY);
     const fetchData = async () => {
       try {
         const response = await fetch("https://api.jsonbin.io/v3/b/671cdf95e41b4d34e4491863", {
@@ -19,7 +20,6 @@ const FeelingsPast = () => {
           throw new Error("Network response was not ok");
         }
         const result = await response.json();
-        console.log("Fetched data:", result);
         setData(result.record.feelings || []);
       } catch (error) {
         setError(error);
