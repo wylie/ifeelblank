@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ifeelblank/static/css/main.61243879.css",
-    "main.js": "/ifeelblank/static/js/main.416f06bf.js",
+    "main.js": "/ifeelblank/static/js/main.de07a456.js",
     "static/js/453.d9262ae9.chunk.js": "/ifeelblank/static/js/453.d9262ae9.chunk.js",
     "index.html": "/ifeelblank/index.html",
     "main.61243879.css.map": "/ifeelblank/static/css/main.61243879.css.map",
-    "main.416f06bf.js.map": "/ifeelblank/static/js/main.416f06bf.js.map",
+    "main.de07a456.js.map": "/ifeelblank/static/js/main.de07a456.js.map",
     "453.d9262ae9.chunk.js.map": "/ifeelblank/static/js/453.d9262ae9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.61243879.css",
-    "static/js/main.416f06bf.js"
+    "static/js/main.de07a456.js"
   ]
 }
